@@ -1,11 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import data from "./data";
 import Tours from "./components/Tours"
 
 const App = () => {
   const [tours,setTours]=useState(data);
+  function removeTour(id){
+    const newTour=tours.filter((tour)=>{tour.id!==id});
+    setTours(newTour);
+
+  }
   return <div>
-  <Tours tours={tours}></Tours></div>;//we makes then a custome component sfter heading name as Tours
+  <Tours tours={tours} removeTours={removeTour}></Tours></div>;//we makes then a custome component sfter heading name as Tours
 };
 
 export default App;
