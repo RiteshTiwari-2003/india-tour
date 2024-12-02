@@ -9,6 +9,12 @@ const App = () => {
     setTours(newTour);
 
   }
+  if (tours.length===0){
+    return (<div className="refresh">
+      <h1>No Tours left.</h1>
+      <button onClick={()=>setTours(data)}>Refresh</button>
+    </div>);
+  }
   return <div>
   <Tours tours={tours} removeTours={removeTour}></Tours></div>;//we makes then a custome component sfter heading name as Tours
 };
