@@ -1,7 +1,11 @@
 import React from "react";
+import data from "./data";
+import Tours from "./components/Tours"
 
 const App = () => {
-  return <div>App</div>;
+  const [tours,setTours]=useState(data);
+  return <div>
+  <Tours tours={tours}></Tours></div>;//we makes then a custome component sfter heading name as Tours
 };
 
 export default App;
