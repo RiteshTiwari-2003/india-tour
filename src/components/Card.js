@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import {useState} from "react";
 function Card({id,image,info,price,name,removeTour}){
     const [readmore,setReadmore]=useState(false);
@@ -6,7 +7,9 @@ function Card({id,image,info,price,name,removeTour}){
         setReadmore(!readmore);
     }
     
+    // eslint-disable-next-line react/jsx-no-comment-textnodes
     return(<div className="card">
+        
         <img src={image} className="image"></img>
         <div className="tour-info"><div className="tour-details">
             <h4 className="tour-price">rupees. {price}</h4>
