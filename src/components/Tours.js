@@ -7,7 +7,7 @@ function Tours({tours,removeTour}){
             </div>
             <div className="cards">
                 {tours.map((tour)=>{
-                    return <Card key={tour.id}{...tour} removeTour={removeTour}></Card>
+                    return <Card key={tour.id}{...tour} removeTour={removeTour}></Card>// a good ruloe of thumb is that element inside the map() calls need key
                 })}
             </div>
         </div>
