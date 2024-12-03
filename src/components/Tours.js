@@ -15,3 +15,5 @@ function Tours({tours,removeTour}){
 
 }
 export default Tours;
+
+// why we use useeffect when we do any changes on any peace of code then we want to perform that change also on ui then for this we useState hook
