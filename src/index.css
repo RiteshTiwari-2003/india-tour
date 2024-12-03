@@ -6,4 +6,37 @@
 }
 body{
     min-height: 100vh;
+    font-family:"Poppins",sans-serif;
+}
+.title{
+    font-size:3rem;
+    margin:6vh;
+    border:7px dashed rgb(1,17,160);
+    border-radius:20px;
+    padding:1vh 5vw;
+
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin:0 auto;
+}
+.card{
+    width: 400px;
+    height: max-content;
+    margin:1rem;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+    align-items: center;
 }
