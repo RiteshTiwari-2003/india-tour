@@ -16,4 +16,6 @@ function Tours({tours,removeTour}){
 }
 export default Tours;
 
-// why we use useeffect when we do any changes on any peace of code then we want to perform that change also on ui then for this we useState hook
+// why we use useState when we do any changes on any peace of code then we want to perform that change also on ui then for this we useState hook
+// useeffect is basically use for manage side effect, side effect is basiclly a change which happen on any component of website nand due to that event any other apart from that component change occur 
+//this is called side effect
