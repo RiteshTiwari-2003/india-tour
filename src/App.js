@@ -5,6 +5,7 @@ import Tours from "./components/Tours"
 const App = () => {
   const [tours,setTours]=useState(data);
   function removeTour(id){
+    // eslint-disable-next-line no-unused-expressions
     const newTour=tours.filter((tour)=>{tour.id!==id});
     setTours(newTour);
 
